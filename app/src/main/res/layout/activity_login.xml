@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUsername"
+                android:drawableLeft="@drawable/custom_edittext"
+                android:hint="Username"
+                android:padding="8dp"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="40dp">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:drawableLeft="@drawable/custom_edittext"
+                android:hint="Password"
+                android:padding="8dp"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="40dp">
+            </EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnLogin"
+                android:textSize="18sp"
+                android:onClick="sendData"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/purple_700"
+                app:cornerRadius="20dp">
+
+            </Button>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="Not register yet? Signup Now!"
+        android:layout_marginBottom="20dp">
+
+    </TextView>
+
+
+</LinearLayout>
